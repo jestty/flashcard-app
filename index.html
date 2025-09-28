@@ -82,7 +82,7 @@
       // Đăng ký service worker
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-          .register('sw.js')
+          .register('/service-worker.js')
           .then((reg) => {
             console.log('Service Worker đăng ký thành công:', reg.scope);
           })
